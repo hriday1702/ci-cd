@@ -1,1 +1,2 @@
 This conent should be printed on screen
+this change should be build automatically 

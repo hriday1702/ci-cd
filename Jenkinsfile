@@ -10,15 +10,21 @@ pipeline {
   
   stages {
   
-    stage('Declarative Checkout') {
+    stage('Stage1') {
       steps { 
-        checkout scm
+        sh 'echo Stag1'
       }
     }
     
     stage('Printfile') {
       steps {
         sh 'cat abc.txt'
+      }
+    }
+    
+    stage('Stage2') {
+      steps { 
+        sh 'echo Stag2'
       }
     }
     
